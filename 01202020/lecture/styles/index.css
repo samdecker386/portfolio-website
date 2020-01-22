@@ -1,0 +1,114 @@
+/* GENERAL STYLES */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;   
+    border: 1px solid gray; 
+}
+body{
+    line-height: 2;
+}
+section {
+    padding: 4% 0;
+}
+i {
+    font-size: 50px;
+}
+
+/* HEADER SECTION STYLES */
+header {
+    background-image: url('../images/mainbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;   
+}
+.logo {
+    width: 5%;
+}
+.links {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.titles div {
+    width: 50%;
+    text-align: center;
+}
+
+/* ABOUT SECTION STYLES */
+#about {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about h2 {
+    text-align: center;
+}
+#about div {
+    background-color: palevioletred;
+    width: 60%;
+}
+
+/* SKILLS SECTION STYLES */
+#skills h2 {
+    text-align: center;
+}
+.SkillsCont {
+    display: flex;
+    justify-content: space-around;
+}
+.SkillsCont div {
+    width: 25%;
+    text-align: center;
+}
+
+/* MEDIA QUERIES HERE */
+@media (max-width: 940px) {
+    #about div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .SkillsCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SkillsCont div {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 15%;
+    }
+    .links {
+        width: 90%;
+    }
+    #about div {
+        width: 90%;
+    }
+}
